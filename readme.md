@@ -1,3 +1,5 @@
+[![Build Status](https://jenkins.aeolus.se/buildStatus/icon?job=aeolus-HelloWorld)](https://jenkins.aeolus.se/job/aeolus-HelloWorld/)
+
 Build docker image.
 ```sh
 docker build . -t aeolus/hello-world
