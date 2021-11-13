@@ -1,6 +1,5 @@
-"use strict";
-
 import express from "express";
+import { default as math } from "./math";
 
 // Constants
 const PORT = 8080;
@@ -12,9 +11,17 @@ app.get("/", (req, res) => {
     res.send("Hello World.");
 });
 
+app.get("/sum/:a/:b", (req, res) => {
+    const a = Number(req.params.a);
+    const b = Number(req.params.b);
+    const sum = math.sum(a, b);
+    res.send(`${a}+${b}=${sum}`);
+});
+
 app.get("/test", (req, res) => {
     res.send("This was automatically built and deployed by Jenkins. ");
 });
 
 app.listen(PORT, HOST);
+console.log(`NODE environment is ${process.env.NODE_ENV}`);
 console.log(`Running on http://${HOST}:${PORT}`);
