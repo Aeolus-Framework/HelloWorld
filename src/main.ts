@@ -18,6 +18,13 @@ app.get("/sum/:a/:b", (req, res) => {
     res.send(`${a}+${b}=${sum}`);
 });
 
+app.get("/multiply/:a/:b", (req, res) => {
+    const a = Number(req.params.a);
+    const b = Number(req.params.b);
+    const sum = math.multiply(a, b);
+    res.send(`${a}*${b}=${sum}`);
+});
+
 app.get("/test", (req, res) => {
     res.send("This was automatically built and deployed by Jenkins. ");
 });
