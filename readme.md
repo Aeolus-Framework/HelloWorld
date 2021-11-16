@@ -1,4 +1,4 @@
-[![Build Status](https://jenkins.aeolus.se/buildStatus/icon?job=aeolus-HelloWorld)](https://jenkins.aeolus.se/job/aeolus-HelloWorld/)
+![Build Status](https://jenkins.aeolus.se/buildStatus/icon?job=aeolus-HelloWorld-2)
 
 Build docker image.
 ```sh
