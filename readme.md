@@ -1,4 +1,5 @@
 ![Build Status](https://jenkins.aeolus.se/buildStatus/icon?job=aeolus-HelloWorld-2)
+![Node test](https://github.com/Aeolus-Framework/HelloWorld/actions/workflows/node.js.yml/badge.svg)
 
 Build docker image.
 ```sh
